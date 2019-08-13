@@ -4,7 +4,7 @@ pipeline {
     stage('Lint HTML') {
       agent any
       steps {
-        sh '''tidy -q -e *.html
+        sh '''tidy -q -e *.css
 '''
       }
     }
